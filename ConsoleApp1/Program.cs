@@ -1,9 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, Abdullah!");
+// Numbers and integers 
+long a = 10000000000000000;
+int b = 20;
+long c = a + b;
 
-string firstname = "Abdullah";
-string secondname = "usman";
-secondname = secondname.Trim();
-Console.WriteLine($"My first name is {firstname} and my second name is {secondname}");
-// concatenation
-Console.WriteLine("My first name is : "+ firstname + " and my second name is "+secondname);
+Console.WriteLine(c);
