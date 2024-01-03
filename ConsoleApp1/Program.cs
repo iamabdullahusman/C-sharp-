@@ -3,6 +3,7 @@ Console.WriteLine("Hello, Abdullah!");
 
 string firstname = "Abdullah";
 string secondname = "usman";
+secondname = secondname.Trim();
 Console.WriteLine($"My first name is {firstname} and my second name is {secondname}");
 // concatenation
 Console.WriteLine("My first name is : "+ firstname + " and my second name is "+secondname);
