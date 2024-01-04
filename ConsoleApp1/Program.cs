@@ -1,17 +1,10 @@
-﻿// for loop
-// using System.Threading.Tasks.Dataflow;
+﻿var names = new List<string> {"Abdullah", "Ahsan" , " Bilal"};
 
-// for (int i = 0; i<=5 ; i++)
-// {
-//     if (i == 3)
-//     {
-//     Console.WriteLine(i);
-//     }
-// }
-for (int row = 1; row < 11; row++)
+names.Add("Abdullah");
+names.Add("Ahsan");
+names.Add("Bilal");
+
+foreach(var name in names)
 {
-  for (char column = 'a'; column < 'k'; column++)
-  {
-    Console.WriteLine($"The cell is ({row}, {column})");
-  }
-}
+    Console.WriteLine("$Hello {name.ToUpper()}!");
+} 
