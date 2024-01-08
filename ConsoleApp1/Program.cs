@@ -1,10 +1,14 @@
-﻿List<int> Scores = [97,92,81,60];  // LINQ (Language integrated query)
- for(int i=0; i< Scores.Count; i++)
- {
-    if(Scores[i]>80){
-        Console.WriteLine($"Find a Score over 80 {Scores[i]}");
-    }
-    
+﻿// specify the data source 
+int [] scores = [10,20,30,40];
+// Define the query expression
+IEnumerable<int> scoreQuery = 
+ from score in scores
+ where score > 80
+ select score;
+ // Excecute the query
+ foreach(var i in scoreQuery)
+{
+    Console.Write(i + " ");
 }
 
 
