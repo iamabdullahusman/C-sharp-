@@ -1,9 +1,11 @@
-﻿var numbers = new List <int> {45,56,99,48,67,78};
+﻿List<int> Scores = [97,92,81,60];  // LINQ (Language integrated query)
+ for(int i=0; i< Scores.Count; i++)
+ {
+    if(Scores[i]>80){
+        Console.WriteLine($"Find a Score over 80 {Scores[i]}");
+    }
+    
+}
 
-Console.WriteLine($"I found 99 at index {numbers.IndexOf(99)} ");
-numbers.Sort();
-Console.WriteLine($"I found 99 at index {numbers.IndexOf(99)} ");
 
-// foreach( var number in numbers){
-//     Console.WriteLine($"(number)");
-// }
+
